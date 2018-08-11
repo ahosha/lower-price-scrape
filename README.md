@@ -3,9 +3,7 @@ lower-price-scrape
 
 This repository includes code for a RESTful web service that takes a product name query parameter and return the lowest current available price. The price for comparison is taken by querying and comparing results from Best Buy and Walmart using the supplied API keys. If there are multiple products, the lowest priced product should be returned.
 
-Stores API can be tested on following:
-    Best Buy: http://bestbuyapis.github.io/bby-query-builder/#/productSearch
-    Walmart:  https://developer.walmartlabs.com/io-docs
+Stores API can be tested on following: Best Buy: http://bestbuyapis.github.io/bby-query-builder/#/productSearch . For Walmart:  https://developer.walmartlabs.com/io-docs
 
 Following Python client library were used 
     for Walmart API: walmart-api-client 1.0 
