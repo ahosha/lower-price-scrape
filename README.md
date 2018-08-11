@@ -23,6 +23,6 @@ Sample Response
 {
     "productName": "iPad Mini",
     "bestPrice": "150.00",
-    "currency": "CAD",
+    "currency": "USD",
     "location": "Walmart"
 }
