@@ -1,0 +1,11 @@
+
+Flask
+Flask-RESTful
+Werkzeug
+beautifulsoup4
+requests
+passlib
+walmart-api-client
+BestBuyAPI
+
+

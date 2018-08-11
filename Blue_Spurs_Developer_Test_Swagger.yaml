@@ -1,0 +1,61 @@
+swagger: '2.0'
+info:
+  description: ITPS API
+  version: 1.0.0
+  title: Blue Spurs Developer Test
+  termsOfService: 'http://swagger.io/terms/'
+  contact:
+    email: apiteam@swagger.io
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+basePath: /v1
+tags:
+  - name: products
+    description: RESTful web service that takes a product name query parameter and return the lowest current available price. The price for comparison is taken by querying and comparing results from Best Buy and Walmart using the supplied API keys. If there are multiple products, the lowest priced product should be returned.
+schemes:
+  - http
+paths:
+  /product/search:
+    get:
+      tags:
+        - products
+      summary: API to receive minimal product price from stores 
+      description: Takes a product name query parameter and return the lowest current available price. The price for comparison is taking  by querying and comparing results from Best Buy and Walmart using the supplied API keys. If there are multiple products, the lowest priced product should be returned.
+      consumes:
+        - application/xml
+        - application/json
+        - multipart/form-data
+        - application/x-www-form-urlencoded
+      produces:
+        - application/json
+      parameters:
+        - name: name
+          in: query
+          description: 'product name query parameter for querying'
+          required: true
+          type: string
+      responses:
+        "200":
+          description: successful operation
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/Product"
+definitions:
+  Product:
+    properties:
+      productName:
+        type: string
+      currency:
+        type: string
+      location:
+        type: string
+      bestPrice:
+        type: number
+        format: double
+    xml:
+      name: Tag    
+externalDocs:
+  description: Find out more about Swagger
+  url: 'http://swagger.io'
