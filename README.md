@@ -15,9 +15,7 @@ Walmart: 'rm25tyum3p9jm9x9x7zxshfa'
 
 Lower-price-scraper API description in  Swagger file : Blue_Spurs_Developer_Test_Swagger.yaml (in this repository)
 
-Request
-
-GET /product/search?name=ipad
+Request  GET /product/search?name=ipad
 
 
 
