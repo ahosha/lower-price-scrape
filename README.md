@@ -18,8 +18,10 @@ Lower-price-scraper API description in  Swagger file : Blue_Spurs_Developer_Test
 Request
 
 GET /product/search?name=ipad
-Sample Response
 
+
+
+Response
 {
     "productName": "iPad Mini",
     "bestPrice": "150.00",
